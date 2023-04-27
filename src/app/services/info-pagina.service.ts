@@ -32,7 +32,7 @@ export class InfoPaginaService {
   this.http
     .get('https://web-app-hector-etif-default-rtdb.europe-west1.firebasedatabase.app/equipo.json')
     .subscribe((resp: infoPagina) => {
-      this.info = resp; // provar resp. I veurem les propietats JSON
+      this.equipo = resp; // provar resp. I veurem les propietats JSON
       console.log(resp);
     });
   }
